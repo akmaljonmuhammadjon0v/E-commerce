@@ -90,7 +90,7 @@ const CartPage = () => {
 
 	const { cart, removeFromCart } = useCartStore();
 	return (
-		<Suspense fallback={<div>Loading...</div>}>
+		<Suspense>
 			<div className='flex flex-col gap-8 items-center justify-center mt-12'>
 				{/* TITLE */}
 				<h1 className='text-2xl font-medium'>Your Shopping Cart</h1>
